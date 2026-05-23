@@ -1,0 +1,21 @@
+.SplitView {
+  display: flex;
+}
+
+.Logo-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.left-side {
+  background-color: white;
+  padding: 10px;
+  height: 100vh;
+  flex: 0.7 1;
+}
+
+.right-side {
+  padding: 10px;
+  background-color: red;
+  flex: 1 1;
+}
