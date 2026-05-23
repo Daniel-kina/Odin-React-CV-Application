@@ -1,8 +1,10 @@
 import InputTextField from "./InputField";
+import "../styles/GeneralInfo.css";
+
 
 function GeneralInfo({ data, handlePersonalInfo }) {
   return (
-    <div>
+    <div className="card">
       <h2>Personal Details</h2>
       <InputTextField
         text="Name: "

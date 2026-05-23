@@ -1,5 +1,6 @@
 .SplitView {
   display: flex;
+  background-color: #f8fafc;
 }
 
 .Logo-title {
@@ -8,7 +9,7 @@
 }
 
 .left-side {
-  background-color: white;
+  background-color: #f8fafc;
   padding: 10px;
   height: 100vh;
   flex: 0.7 1;
@@ -16,6 +17,6 @@
 
 .right-side {
   padding: 10px;
-  background-color: red;
+  background-color: #e2e8f0;
   flex: 1 1;
 }

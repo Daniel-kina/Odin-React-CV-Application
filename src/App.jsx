@@ -3,7 +3,6 @@ import { useState } from "react";
 import SideBySide from "./components/SideBySide";
 import GeneralInfo from "./components/GeneralInfo";
 import PreviewGeneralInfo from "./components/PreviewGeneralInfo";
-
 import "./styles/App.css";
 
 function App() {
