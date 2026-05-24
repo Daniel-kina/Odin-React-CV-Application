@@ -4,6 +4,7 @@ import SideBySide from "./components/SideBySide";
 import GeneralInfo from "./components/GeneralInfo";
 import PreviewGeneralInfo from "./components/PreviewGeneralInfo";
 import EducationCard from "./components/EducationCard";
+import PreviewEducation from "./components/PreviewEducation";
 import ExperienceCard from "./components/ExperienceCard";
 import "./styles/App.css";
 
@@ -88,6 +89,7 @@ function App() {
 
             <div className="preview">
               <PreviewGeneralInfo data={personalInfo}></PreviewGeneralInfo>
+              <PreviewEducation data={education}></PreviewEducation>
             </div>
           </div>
         }
