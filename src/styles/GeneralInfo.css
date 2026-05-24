@@ -1,6 +1,55 @@
 .card {
-    padding: 12px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 14px;
-    
+  margin-top: 20px;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 14px;
+  box-shadow: 2px 1px 14px 3px rgba(0, 0, 0, 0.13);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Das Beschriftungs-Label */
+.input-container label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #344054;
+  margin-bottom: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+/* Das eigentliche Eingabefeld */
+.input-container input {
+  padding: 0.65rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #101828;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Platzhalter-Text stylen (falls du mal einen nutzt) */
+.input-container input::placeholder {
+  color: #667085;
+}
+
+/* ── DIE MAGIE: Wenn der Nutzer in das Feld klickt (Focus) ── */
+.input-container input:focus {
+  border-color: #84caff;
+  /* Erzeugt einen eleganten, weichen blauen Schein (Glow) um das Feld */
+  box-shadow:
+    0px 1px 2px rgba(16, 24, 40, 0.05),
+    0px 0px 0px 4px #d1e9ff;
+}
+
+/* Wenn das Feld fokussiert ist, färben wir auch das Label leicht blau */
+.input-container:focus-within label {
+  color: #1570ef;
 }

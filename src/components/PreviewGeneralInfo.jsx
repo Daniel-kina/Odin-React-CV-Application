@@ -1,6 +1,8 @@
+import "../styles/PreviewGeneralInfo.css";
+
 function PreviewGeneralInfo({ data }) {
   return (
-    <div>
+    <div className="personal-info-container">
       <h2>{data.name + " " + data.lastName}</h2>
       <div>
         <p>{data.email}</p>

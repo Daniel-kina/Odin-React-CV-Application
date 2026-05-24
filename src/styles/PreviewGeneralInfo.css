@@ -1,0 +1,10 @@
+.personal-info-container h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.personal-info-container div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}

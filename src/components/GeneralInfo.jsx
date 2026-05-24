@@ -1,42 +1,42 @@
 import InputTextField from "./InputField";
+import InputBirthdate from "./inputBirthdate";
 import "../styles/GeneralInfo.css";
 
-
-function GeneralInfo({ data, handlePersonalInfo }) {
+function GeneralInfo({ data, onChange }) {
   return (
     <div className="card">
       <h2>Personal Details</h2>
       <InputTextField
         text="Name: "
         name="name"
-        handlePersonalInfo={handlePersonalInfo}
+        onChange={onChange}
         data={data}
       ></InputTextField>
       <InputTextField
         text="Last Name: "
         name="lastName"
-        handlePersonalInfo={handlePersonalInfo}
+        onChange={onChange}
         data={data}
       ></InputTextField>
       <InputTextField
         text="Email: "
         name="email"
-        handlePersonalInfo={handlePersonalInfo}
+        onChange={onChange}
         data={data}
       ></InputTextField>
       <InputTextField
         text="Phone Number: "
         name="phoneNumber"
-        handlePersonalInfo={handlePersonalInfo}
+        onChange={onChange}
         data={data}
       ></InputTextField>
 
-      <InputTextField
+      <InputBirthdate
         text="BirthDate: "
         name="birthdate"
-        handlePersonalInfo={handlePersonalInfo}
+        onChange={onChange}
         data={data}
-      ></InputTextField>
+      ></InputBirthdate>
     </div>
   );
 }

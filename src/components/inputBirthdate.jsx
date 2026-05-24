@@ -1,4 +1,4 @@
-function InputTextField({
+function InputBirthdate({
   text = "Forgot to add text",
   name = "None",
   onChange,
@@ -8,7 +8,7 @@ function InputTextField({
     <div className="input-container">
       <label htmlFor={name}>{text}</label>
       <input
-        type="text"
+        type="date"
         id={name}
         value={data[name]}
         name={name}
@@ -18,4 +18,4 @@ function InputTextField({
   );
 }
 
-export default InputTextField;
+export default InputBirthdate;
